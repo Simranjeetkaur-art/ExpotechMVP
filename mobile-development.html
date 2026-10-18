@@ -1,150 +1,330 @@
 <!doctype html>
 <html lang="en" class="no-js">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mobile Development | Expotech Inc</title>
-<meta name="description" content="Mobile apps, PWAs, payment integration and Mobile Resource Management for field service teams from Expotech.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="assets/img/logo.png">
-<script>document.documentElement.classList.remove('no-js');setTimeout(function(){if(!window.EXP_READY)document.documentElement.classList.add('no-js')},2500);</script>
-<script src="assets/js/main.js" defer></script>
-</head>
-<body data-page="services">
-<div data-include="header"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mobile Development | Expotech Inc</title>
+    <meta
+      name="description"
+      content="Mobile apps, PWAs, payment integration and Mobile Resource Management for field service teams from Expotech."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/logo.png" />
+    <script>
+      document.documentElement.classList.remove("no-js");
+      setTimeout(function () {
+        if (!window.EXP_READY) document.documentElement.classList.add("no-js");
+      }, 2500);
+    </script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body data-page="services">
+    <div data-include="header"></div>
 
-<main id="main">
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero__media">
+          <img class="kenburns" src="assets/img/mobile.jpg" alt="" />
+        </div>
+        <div class="container page-hero__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb" data-reveal="up">
+            <a href="index.html">Home</a><i data-icon="chevron-right"></i
+            ><span>Services</span><i data-icon="chevron-right"></i
+            ><span style="color: #fff">Mobile Development</span>
+          </nav>
+          <div class="page-hero__content">
+            <span class="eyebrow" data-reveal="up">Mobile development</span>
+            <h1 class="words">
+              Mobile apps your customers <strong>actually enjoy using</strong>
+            </h1>
+            <p class="lead" data-reveal="up" style="--delay: 0.3s">
+              Mobile solutions, PWAs and PCI-compliant payments, designed for
+              quick, easy data processing and the best customer experience.
+            </p>
+            <div class="btn-row" data-reveal="up" style="--delay: 0.45s">
+              <a class="btn btn--primary btn--lg" href="contact.html"
+                >Start your app <i data-icon="arrow-right"></i
+              ></a>
+              <a class="btn btn--light btn--lg" href="#mrm"
+                >Mobile Resource Management</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+          <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path
+              fill="currentColor"
+              d="M0 60V30C240 0 480 0 720 22s480 38 720 8v30z"
+            />
+          </svg>
+        </div>
+      </section>
 
-<section class="page-hero">
-  <div class="page-hero__media"><img class="kenburns" src="assets/img/mobile.jpg" alt=""></div>
-  <div class="container page-hero__inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb" data-reveal="up"><a href="index.html">Home</a><i data-icon="chevron-right"></i><span>Services</span><i data-icon="chevron-right"></i><span style="color:#fff">Mobile Development</span></nav>
-    <div class="page-hero__content">
-      <span class="eyebrow" data-reveal="up">Mobile development</span>
-      <h1 class="words">Mobile apps your customers <strong>actually enjoy using</strong></h1>
-      <p class="lead" data-reveal="up" style="--delay:.3s">Mobile solutions, PWAs, PCI compliance and our patented secure electronic signature, designed for quick, easy data processing and the best customer experience.</p>
-      <div class="btn-row" data-reveal="up" style="--delay:.45s">
-        <a class="btn btn--primary btn--lg" href="contact.html">Start your app <i data-icon="arrow-right"></i></a>
-        <a class="btn btn--light btn--lg" href="#mrm">Mobile Resource Management</a>
-      </div>
-    </div>
-  </div>
-  <div class="hero-wave" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="currentColor" d="M0 60V30C240 0 480 0 720 22s480 38 720 8v30z"/></svg></div>
-</section>
+      <!-- Intro -->
+      <section class="section">
+        <div class="container split">
+          <div class="stack" data-reveal="left">
+            <span class="eyebrow">Beyond the desktop</span>
+            <h2 class="h-section">
+              Mobile is how your customers <strong>reach your systems</strong>
+            </h2>
+            <p class="lead">
+              With mobile technology changing the way we communicate and do
+              business, organizations are making significant investments in
+              mobile and digital.
+            </p>
+            <p>
+              Mobile devices are transforming the way people connect with
+              enterprise systems. We combine industry intelligence with our
+              technology background to design and build mobile applications that
+              are customer-friendly and make data processing quick and easy.
+            </p>
+          </div>
+          <figure class="frame" data-reveal="right" style="margin: 0">
+            <div class="zoom" style="aspect-ratio: 4/3">
+              <img
+                src="assets/img/ai-service-2.jpg"
+                alt="Shopping cart on a laptop keyboard"
+              />
+            </div>
+          </figure>
+        </div>
+      </section>
 
-<!-- Intro -->
-<section class="section">
-  <div class="container split">
-    <div class="stack" data-reveal="left">
-      <span class="eyebrow">Beyond the desktop</span>
-      <h2 class="h-section">Mobile is how your customers <strong>reach your systems</strong></h2>
-      <p class="lead">With mobile technology changing the way we communicate and do business, organizations are making significant investments in mobile and digital.</p>
-      <p>Mobile devices are transforming the way people connect with enterprise systems. We combine industry intelligence with our technology background to design and build mobile applications that are customer-friendly and make data processing quick and easy.</p>
-    </div>
-    <figure class="frame" data-reveal="right" style="margin:0">
-      <div class="zoom" style="aspect-ratio:4/3"><img src="assets/img/ai-service-2.jpg" alt="Shopping cart on a laptop keyboard"></div>
-    </figure>
-  </div>
-</section>
+      <!-- Services -->
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-head section-head--center">
+            <span class="eyebrow" data-reveal="up">Our services</span>
+            <h2 class="h-section words">
+              Web, mobile and <strong>everything in between</strong>
+            </h2>
+          </div>
+          <div class="grid grid--3" data-stagger="up" data-stagger-step="100">
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="globe"></i></span>
+              <h3>Website design</h3>
+              <p>Responsive websites that work on every screen.</p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="cart"></i></span>
+              <h3>E-commerce solutions</h3>
+              <p>Online stores with secure checkout and payments.</p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="smartphone"></i></span>
+              <h3>Mobile application development</h3>
+              <p>Native and progressive web apps (PWA) for iOS and Android.</p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="database"></i></span>
+              <h3>Data migration &amp; wallet software</h3>
+              <p>Data migration, databases and digital wallet software.</p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="trending"></i></span>
+              <h3>Redesign + digital services</h3>
+              <p>Site redesign with SEO, SMO and PPC.</p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="dollar"></i></span>
+              <h3>Payment gateway integration</h3>
+              <p>PCI-compliant card and digital payments.</p>
+              <span class="card__corner"></span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- Services -->
-<section class="section section--soft">
-  <div class="container">
-    <div class="section-head section-head--center">
-      <span class="eyebrow" data-reveal="up">Our services</span>
-      <h2 class="h-section words">Web, mobile and <strong>everything in between</strong></h2>
-    </div>
-    <div class="grid grid--3" data-stagger="up" data-stagger-step="100">
-      <div class="card card--hover"><span class="icon-box"><i data-icon="globe"></i></span><h3>Website design</h3><p>Responsive websites that work on every screen.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="cart"></i></span><h3>E-commerce solutions</h3><p>Online stores with secure checkout and payments.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="smartphone"></i></span><h3>Mobile application development</h3><p>Native and progressive web apps (PWA) for iOS and Android.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="database"></i></span><h3>Data migration &amp; wallet software</h3><p>Data migration, databases and digital wallet software.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="trending"></i></span><h3>Redesign + digital services</h3><p>Site redesign with SEO, SMO and PPC.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="dollar"></i></span><h3>Payment gateway integration</h3><p>PCI-compliant card and digital payments.</p><span class="card__corner"></span></div>
-    </div>
-  </div>
-</section>
+      <!-- Process -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow" data-reveal="up">How we build</span>
+            <h2 class="h-section words">
+              From idea to app, <strong>and beyond launch</strong>
+            </h2>
+          </div>
+          <div class="steps" data-stagger="up" data-stagger-step="130">
+            <div class="steps__item" style="--d: 0s">
+              <span class="steps__dot"></span><span class="steps__num">01</span>
+              <h3>Mobile strategy</h3>
+              <p>
+                We develop your idea and turn it into reality to achieve your
+                goal.
+              </p>
+            </div>
+            <div class="steps__item" style="--d: 0.2s">
+              <span class="steps__dot"></span><span class="steps__num">02</span>
+              <h3>Mobile UI/UX design</h3>
+              <p>We create the best experience for your customer.</p>
+            </div>
+            <div class="steps__item" style="--d: 0.4s">
+              <span class="steps__dot"></span><span class="steps__num">03</span>
+              <h3>App development</h3>
+              <p>
+                Progressive mobile application development (PWA) that makes you
+                successful.
+              </p>
+            </div>
+            <div class="steps__item" style="--d: 0.6s">
+              <span class="steps__dot"></span><span class="steps__num">04</span>
+              <h3>Backend server</h3>
+              <p>End-to-end, scalable, robust backend solutions.</p>
+            </div>
+            <div class="steps__item" style="--d: 0.8s">
+              <span class="steps__dot"></span><span class="steps__num">05</span>
+              <h3>Continuous support</h3>
+              <p>We support you every step of the way.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- Process -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow" data-reveal="up">How we build</span>
-      <h2 class="h-section words">From idea to app, <strong>and beyond launch</strong></h2>
-    </div>
-    <div class="steps" data-stagger="up" data-stagger-step="130">
-      <div class="steps__item" style="--d:0s"><span class="steps__dot"></span><span class="steps__num">01</span><h3>Mobile strategy</h3><p>We develop your idea and turn it into reality to achieve your goal.</p></div>
-      <div class="steps__item" style="--d:.2s"><span class="steps__dot"></span><span class="steps__num">02</span><h3>Mobile UI/UX design</h3><p>We create the best experience for your customer.</p></div>
-      <div class="steps__item" style="--d:.4s"><span class="steps__dot"></span><span class="steps__num">03</span><h3>App development</h3><p>Progressive mobile application development (PWA) that makes you successful.</p></div>
-      <div class="steps__item" style="--d:.6s"><span class="steps__dot"></span><span class="steps__num">04</span><h3>Backend server</h3><p>End-to-end, scalable, robust backend solutions.</p></div>
-      <div class="steps__item" style="--d:.8s"><span class="steps__dot"></span><span class="steps__num">05</span><h3>Continuous support</h3><p>We support you every step of the way.</p></div>
-    </div>
-  </div>
-</section>
+      <!-- MRM -->
+      <section class="section section--darker glow" id="mrm">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <span class="eyebrow" data-reveal="up"
+                >MRM · Mobile Resource Management</span
+              >
+              <h2 class="h-section words">
+                Field service, <strong>in the palm of your hand</strong>
+              </h2>
+            </div>
+            <p class="lead" data-reveal="up">
+              A complete solution for technicians in the field, connected in
+              real time to dispatch, inventory and billing.
+            </p>
+          </div>
+          <div class="grid grid--2">
+            <div class="card card--dark" data-reveal="left">
+              <span class="eyebrow eyebrow--plain">Features</span>
+              <ul class="checklist" data-stagger="up" data-stagger-step="80">
+                <li><i data-icon="clock"></i><span>Clock in and out</span></li>
+                <li>
+                  <i data-icon="pin"></i
+                  ><span>Dynamic turn-by-turn GPS directions</span>
+                </li>
+                <li>
+                  <i data-icon="workflow"></i
+                  ><span>Real-time work order status</span>
+                </li>
+                <li>
+                  <i data-icon="receipt"></i
+                  ><span>Print customer receipts</span>
+                </li>
+                <li>
+                  <i data-icon="pen"></i
+                  ><span>Capture field data on site</span>
+                </li>
+                <li>
+                  <i data-icon="shield-check"></i
+                  ><span>PCI compliance to accept credit cards</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card card--dark" data-reveal="right">
+              <span class="eyebrow eyebrow--plain">Value</span>
+              <ul class="checklist" data-stagger="up" data-stagger-step="80">
+                <li>
+                  <i data-icon="eye"></i
+                  ><span>Visibility on routing and better productivity</span>
+                </li>
+                <li>
+                  <i data-icon="phone"></i
+                  ><span
+                    >Fewer interruptions and calls between dispatch and
+                    technicians</span
+                  >
+                </li>
+                <li>
+                  <i data-icon="zap"></i
+                  ><span
+                    >Reduced field service time and fewer missed
+                    appointments</span
+                  >
+                </li>
+                <li>
+                  <i data-icon="dollar"></i><span>Drastically cut costs</span>
+                </li>
+                <li>
+                  <i data-icon="workflow"></i
+                  ><span>Simplified business processes</span>
+                </li>
+                <li>
+                  <i data-icon="truck"></i><span>An extended supply chain</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- MRM -->
-<section class="section section--darker glow" id="mrm">
-  <div class="container">
-    <div class="section-head section-head--split">
-      <div>
-        <span class="eyebrow" data-reveal="up">MRM · Mobile Resource Management</span>
-        <h2 class="h-section words">Field service, <strong>in the palm of your hand</strong></h2>
-      </div>
-      <p class="lead" data-reveal="up">A complete solution for technicians in the field, connected in real time to dispatch, inventory and billing.</p>
-    </div>
-    <div class="grid grid--2">
-      <div class="card card--dark" data-reveal="left">
-        <span class="eyebrow eyebrow--plain">Features</span>
-        <ul class="checklist" data-stagger="up" data-stagger-step="80">
-          <li><i data-icon="clock"></i><span>Clock in and out</span></li>
-          <li><i data-icon="pin"></i><span>Dynamic turn-by-turn GPS directions</span></li>
-          <li><i data-icon="workflow"></i><span>Real-time work order status</span></li>
-          <li><i data-icon="receipt"></i><span>Print customer receipts</span></li>
-          <li><i data-icon="pen"></i><span>Capture electronic signatures</span></li>
-          <li><i data-icon="shield-check"></i><span>PCI compliance to accept credit cards</span></li>
-        </ul>
-      </div>
-      <div class="card card--dark" data-reveal="right">
-        <span class="eyebrow eyebrow--plain">Value</span>
-        <ul class="checklist" data-stagger="up" data-stagger-step="80">
-          <li><i data-icon="eye"></i><span>Visibility on routing and better productivity</span></li>
-          <li><i data-icon="phone"></i><span>Fewer interruptions and calls between dispatch and technicians</span></li>
-          <li><i data-icon="zap"></i><span>Reduced field service time and fewer missed appointments</span></li>
-          <li><i data-icon="dollar"></i><span>Drastically cut costs</span></li>
-          <li><i data-icon="workflow"></i><span>Simplified business processes</span></li>
-          <li><i data-icon="truck"></i><span>An extended supply chain</span></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
+      <section class="section section--soft section--tight">
+        <div class="container">
+          <div class="section-head" style="margin-bottom: 24px">
+            <span class="eyebrow" data-reveal="up">Related services</span>
+          </div>
+          <div class="chips" data-stagger="zoom" data-stagger-step="60">
+            <a
+              class="chip"
+              href="cyber-security.html"
+              style="padding: 10px 18px"
+              ><i data-icon="shield"></i>Cyber Security</a
+            >
+            <a
+              class="chip"
+              href="blockchain-ui-development.html"
+              style="padding: 10px 18px"
+              ><i data-icon="blocks"></i>Blockchain &amp; UI Development</a
+            >
+            <a
+              class="chip"
+              href="financial-services.html"
+              style="padding: 10px 18px"
+              ><i data-icon="bank"></i>Banking &amp; Financial Services</a
+            >
+            <a
+              class="chip"
+              href="insights.html#downloads"
+              style="padding: 10px 18px"
+              ><i data-icon="file"></i>Mobile technology patent</a
+            >
+          </div>
+        </div>
+      </section>
 
-<section class="section section--soft section--tight">
-  <div class="container">
-    <div class="section-head" style="margin-bottom:24px"><span class="eyebrow" data-reveal="up">Related services</span></div>
-    <div class="chips" data-stagger="zoom" data-stagger-step="60">
-      <a class="chip" href="electronic-signature.html" style="padding:10px 18px"><i data-icon="pen"></i>Electronic Signature</a>
-      <a class="chip" href="blockchain-ui-development.html" style="padding:10px 18px"><i data-icon="blocks"></i>Blockchain &amp; UI Development</a>
-      <a class="chip" href="financial-services.html" style="padding:10px 18px"><i data-icon="bank"></i>Financial Services</a>
-      <a class="chip" href="insights.html#downloads" style="padding:10px 18px"><i data-icon="file"></i>Mobile technology patent</a>
-    </div>
-  </div>
-</section>
-
-<section class="cta-band">
-  <div class="container cta-band__inner">
-    <div data-reveal="left" style="flex:1 1 520px">
-      <h2>Have an app idea <strong>or a field team to equip?</strong></h2>
-      <p>We'll take it from strategy and design through build, launch and support.</p>
-    </div>
-    <div class="btn-row" data-reveal="right"><a class="btn btn--dark btn--lg" href="contact.html">Contact us <i data-icon="arrow-right"></i></a></div>
-  </div>
-</section>
-
-</main>
-<div data-include="footer"></div>
-</body>
+      <section class="cta-band">
+        <div class="container cta-band__inner">
+          <div data-reveal="left" style="flex: 1 1 520px">
+            <h2>Have an app idea <strong>or a field team to equip?</strong></h2>
+            <p>
+              We'll take it from strategy and design through build, launch and
+              support.
+            </p>
+          </div>
+          <div class="btn-row" data-reveal="right">
+            <a class="btn btn--dark btn--lg" href="contact.html"
+              >Contact us <i data-icon="arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-include="footer"></div>
+  </body>
 </html>

@@ -248,7 +248,43 @@
         },
       ],
     },
-    { key: "innovation", label: "Innovation", href: "innovation.html" },
+    {
+      key: "innovation",
+      label: "Innovation",
+      wide: true,
+      items: [
+        {
+          label: "Books & Publications",
+          sub: "The Last Command and previously published books",
+          href: "innovation.html#books",
+          icon: "book",
+        },
+        {
+          label: "Patents & Inventions",
+          sub: "Granted patents, patent numbers, inventors and technologies",
+          href: "innovation.html#patents",
+          icon: "award",
+        },
+        {
+          label: "Research & White Papers",
+          sub: "Technical research, methodologies and executive guides",
+          href: "innovation.html#research",
+          icon: "file",
+        },
+        {
+          label: "Case Studies",
+          sub: "Real enterprise projects and measurable outcomes",
+          href: "innovation.html#case-studies",
+          icon: "briefcase",
+        },
+        {
+          label: "Articles & News",
+          sub: "Technology perspectives, announcements and updates",
+          href: "innovation.html#articles",
+          icon: "message",
+        },
+      ],
+    },
   ];
   function extAttrs(it) {
     return it.ext
@@ -304,6 +340,7 @@
         "</button>" +
         '<div class="dropdown' +
         (n.mega ? " dropdown--mega" : "") +
+        (n.wide ? " dropdown--wide" : "") +
         '">' +
         links +
         "</div></li>"

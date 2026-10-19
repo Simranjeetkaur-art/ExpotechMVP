@@ -840,6 +840,48 @@
     apply("all");
   });
 
+  /* ---------------- Patent catalog: search + application-area filter ---------------- */
+  document.querySelectorAll("[data-patent-catalog]").forEach(function (root) {
+    var input = root.querySelector("[data-patent-search]");
+    var btns = root.querySelectorAll("[data-area]");
+    var items = root.querySelectorAll(".patent");
+    var count = root.querySelector("[data-patent-count]");
+    var empty = root.querySelector("[data-patent-empty]");
+    var area = "all";
+    function apply() {
+      var q = input.value.trim().toLowerCase();
+      var shown = 0;
+      items.forEach(function (it) {
+        var areas = " " + it.getAttribute("data-areas") + " ";
+        var text = (
+          it.textContent +
+          " " +
+          (it.getAttribute("data-keywords") || "")
+        ).toLowerCase();
+        var on =
+          (area === "all" || areas.indexOf(" " + area + " ") > -1) &&
+          (!q || text.indexOf(q) > -1);
+        it.classList.toggle("is-hidden", !on);
+        if (on) shown++;
+      });
+      btns.forEach(function (b) {
+        b.setAttribute("aria-pressed", String(b.getAttribute("data-area") === area));
+      });
+      count.textContent =
+        "Showing " + shown + " of " + items.length +
+        (items.length === 1 ? " patent" : " patents");
+      empty.hidden = shown > 0;
+    }
+    input.addEventListener("input", apply);
+    btns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        area = b.getAttribute("data-area");
+        apply();
+      });
+    });
+    apply();
+  });
+
   /* ---------------- Accordion ---------------- */
   document.querySelectorAll(".accordion__btn").forEach(function (b) {
     b.addEventListener("click", function () {

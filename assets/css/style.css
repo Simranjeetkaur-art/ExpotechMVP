@@ -2845,6 +2845,123 @@ body.drawer-open .drawer-overlay {
   width: 20px;
   height: 20px;
 }
+/* Patent catalog (innovation.html#patents) */
+.patent-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.patent-search {
+  position: relative;
+  flex: 1 1 320px;
+  max-width: 520px;
+}
+.patent-search .i {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateY(-50%);
+  color: var(--muted);
+  pointer-events: none;
+}
+.patent-search .input {
+  padding-left: 44px;
+}
+.patents {
+  display: grid;
+  gap: 20px;
+  margin-top: 18px;
+}
+.patent {
+  display: grid;
+  gap: 16px;
+  align-items: start;
+  padding: clamp(22px, 3vw, 38px);
+  border-top: 3px solid var(--teal);
+}
+.patent.is-hidden,
+.patent-empty[hidden] {
+  display: none;
+}
+.patent__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 14px;
+}
+.chip--granted {
+  background: var(--teal);
+  color: var(--darker);
+  font-weight: 700;
+}
+.patent__num {
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--teal-deep);
+}
+.patent h3 {
+  font-size: clamp(20px, 2.3vw, 27px);
+  line-height: 1.3;
+}
+.patent__meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 14px 28px;
+  margin: 0;
+}
+.patent__meta dt {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.patent__meta dd {
+  margin: 3px 0 0;
+  font-weight: 600;
+  color: var(--ink);
+}
+.patent__abstract summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--teal-deep);
+}
+.patent__abstract p {
+  margin-top: 10px;
+  max-width: 78ch;
+}
+.patent__docs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.patent__docs .small {
+  font-weight: 400;
+}
+.patent__related {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--body);
+}
+.patent__related .i {
+  width: 18px;
+  height: 18px;
+  color: var(--teal-deep);
+}
+.patent-empty {
+  padding: 28px;
+  text-align: center;
+  color: var(--muted);
+}
 .dl.is-hidden {
   display: none;
 }

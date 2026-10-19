@@ -156,71 +156,175 @@
 
       <!-- Patents & inventions -->
       <section class="section section--soft" id="patents">
-        <div class="container">
+        <div class="container" data-patent-catalog>
           <div class="section-head">
             <span class="eyebrow" data-reveal="up">Patents &amp; inventions</span>
             <h2 class="h-section words">
               Patented technology, <strong>invented here</strong>
             </h2>
             <p class="lead muted" data-reveal="up">
-              Granted patents in GPS, wireless and mobile technology, developed
-              by Expotech's founder and team.
+              U.S. patents invented by Expotech's founder, Dr. Raed (Rod) Ghani
+              Agha, with the full patent documents to download.
             </p>
           </div>
-          <div class="downloads" data-reveal="up">
-            <div class="dl" data-cat="patents">
-              <div class="dl__main">
-                <span class="icon-box"><i data-icon="award"></i></span>
-                <div>
-                  <span class="dl__title">GPS Patent US008938427: Location Based Content
-                    Delivery</span
-                  ><span class="dl__type">Patent</span>
-                </div>
-              </div>
-              <a
-                class="link-arrow"
-                href="assets/downloads/GPS-Patent-US008938427-Location-Based-Content-Delivery.pdf"
-                target="_blank"
-                rel="noopener"
-                download
-                >Download <i data-icon="download"></i
-              ></a>
+
+          <div class="patent-tools" data-reveal="up">
+            <div class="patent-search">
+              <label class="sr-only" for="patent-search">Search patents</label>
+              <i data-icon="search"></i>
+              <input
+                class="input"
+                id="patent-search"
+                type="search"
+                placeholder="Search patents (e.g. 8938427, GPS)"
+                autocomplete="off"
+                data-patent-search
+              />
             </div>
-            <div class="dl" data-cat="patents">
-              <div class="dl__main">
-                <span class="icon-box"><i data-icon="award"></i></span>
-                <div>
-                  <span class="dl__title">Mobile Technology Patent</span
-                  ><span class="dl__type">Patent</span>
-                </div>
-              </div>
-              <a
-                class="link-arrow"
-                href="assets/downloads/Mobile-Technology-Patent.pdf"
-                target="_blank"
-                rel="noopener"
-                download
-                >Download <i data-icon="download"></i
-              ></a>
-            </div>
-            <div class="dl" data-cat="patents">
-              <div class="dl__main">
-                <span class="icon-box"><i data-icon="award"></i></span>
-                <div>
-                  <span class="dl__title">Patent Certificate: GPS Wireless Technology</span
-                  ><span class="dl__type">Patent certificate</span>
-                </div>
-              </div>
-              <a
-                class="link-arrow"
-                href="assets/downloads/Patent-Certificate-GPS-Wireless-Technology.pdf"
-                target="_blank"
-                rel="noopener"
-                download
-                >Download <i data-icon="download"></i
-              ></a>
+            <div
+              class="tabs__list"
+              role="group"
+              aria-label="Filter by application area"
+            >
+              <button
+                class="tabs__btn"
+                type="button"
+                data-area="all"
+                aria-pressed="true"
+              >
+                All areas
+              </button>
+              <button
+                class="tabs__btn"
+                type="button"
+                data-area="field-service"
+                aria-pressed="false"
+              >
+                Field service
+              </button>
+              <button
+                class="tabs__btn"
+                type="button"
+                data-area="gps"
+                aria-pressed="false"
+              >
+                GPS &amp; location
+              </button>
+              <button
+                class="tabs__btn"
+                type="button"
+                data-area="wireless"
+                aria-pressed="false"
+              >
+                Wireless &amp; mobile
+              </button>
             </div>
           </div>
+          <p class="note" aria-live="polite" data-patent-count>
+            Showing 1 of 1 patent
+          </p>
+
+          <div class="patents">
+            <article
+              class="card patent"
+              data-areas="field-service gps wireless"
+              data-keywords="US8938427 US008938427 8938427 8,938,427 WO2007084784 2007/084784 PCT/US2007/001701 Safelite Rod K. Ghani Agha technician work order"
+              data-reveal="up"
+            >
+              <div class="patent__head">
+                <span class="chip chip--granted">Granted</span>
+                <span class="patent__num">US 8,938,427 B2</span>
+              </div>
+              <h3>Method and Device for Providing Location Based Content Delivery</h3>
+              <dl class="patent__meta">
+                <div>
+                  <dt>Issue date</dt>
+                  <dd>January 20, 2015</dd>
+                </div>
+                <div>
+                  <dt>Inventor</dt>
+                  <dd>Rod Ghani (Dr. Raed Ghani Agha)</dd>
+                </div>
+                <div>
+                  <dt>Assignee</dt>
+                  <dd>Safelite Group, Inc.</dd>
+                </div>
+                <div>
+                  <dt>Filed</dt>
+                  <dd>January 19, 2007 (priority January 19, 2006)</dd>
+                </div>
+                <div>
+                  <dt>Application area</dt>
+                  <dd>Field service, GPS and wireless work orders</dd>
+                </div>
+                <div>
+                  <dt>Also published as</dt>
+                  <dd>WO 2007/084784 A2 (international, PCT)</dd>
+                </div>
+              </dl>
+              <details class="patent__abstract">
+                <summary>Abstract</summary>
+                <p>
+                  A device for providing location based content delivery
+                  includes a server located at a first location, having memory
+                  and data stored in the memory relating to a plurality of
+                  requests for service at a location other than the first
+                  location; a hand-held electronic device configured for
+                  communication via a wireless network with the server, to
+                  receive data relating to the requests for services and to
+                  transmit data regarding the provision of services for
+                  updating the stored data; and a processing device
+                  communicatively coupled to the hand-held device. A method for
+                  providing location based content delivery at a job site other
+                  than the location of a service provider comprises providing a
+                  technician with a hand-held electronic device, clocking the
+                  technician in and out remotely using the device, transferring
+                  and viewing work orders on the device, and capturing customer
+                  information on the device at the job site and transferring it
+                  to a server accessible at the location of the service
+                  provider.
+                </p>
+                <p class="small muted">33 claims, 35 drawing sheets.</p>
+              </details>
+              <div class="patent__docs">
+                <a
+                  class="link-arrow"
+                  href="assets/downloads/GPS-Patent-US008938427-Location-Based-Content-Delivery.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  download
+                  >U.S. patent <span class="small muted">PDF · 50 pages</span>
+                  <i data-icon="download"></i
+                ></a>
+                <a
+                  class="link-arrow"
+                  href="assets/downloads/Patent-Certificate-GPS-Wireless-Technology.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  download
+                  >USPTO certificate <span class="small muted">PDF · 1 page</span>
+                  <i data-icon="download"></i
+                ></a>
+                <a
+                  class="link-arrow"
+                  href="assets/downloads/Mobile-Technology-Patent.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  download
+                  >International publication <span class="small muted">PDF · 72 pages</span>
+                  <i data-icon="download"></i
+                ></a>
+              </div>
+              <a class="patent__related" href="#case-studies"
+                ><i data-icon="briefcase"></i>In practice: the Safelite AutoGlass
+                and mobile repair technician case studies</a
+              >
+            </article>
+          </div>
+          <p class="patent-empty" hidden data-patent-empty>
+            No patents match your search. Try a patent number, an inventor or a
+            technology such as GPS.
+          </p>
         </div>
       </section>
 

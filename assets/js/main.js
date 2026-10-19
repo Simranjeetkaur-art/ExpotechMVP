@@ -660,6 +660,26 @@
     });
   });
 
+  /* ---------------- Rotating words (homepage hero) ---------------- */
+  document.querySelectorAll("[data-rotator]").forEach(function (root) {
+    var items = Array.prototype.slice.call(root.children);
+    if (!items.length) return;
+    var i = 0;
+    items[0].classList.add("is-active");
+    if (reduceMotion || items.length < 2) return;
+    var ms = parseInt(root.getAttribute("data-interval") || "2600", 10);
+    setInterval(function () {
+      var cur = items[i];
+      cur.classList.remove("is-active");
+      cur.classList.add("is-leaving");
+      setTimeout(function () {
+        cur.classList.remove("is-leaving");
+      }, 700);
+      i = (i + 1) % items.length;
+      items[i].classList.add("is-active");
+    }, ms);
+  });
+
   /* ---------------- AIM lifecycle stepper (auto-advances while visible) ---------------- */
   document.querySelectorAll("[data-stepper]").forEach(function (root) {
     var btns = Array.prototype.slice.call(

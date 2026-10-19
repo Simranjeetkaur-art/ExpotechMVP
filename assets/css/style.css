@@ -1392,6 +1392,53 @@ body.drawer-open .drawer-overlay {
   font-size: clamp(2.4rem, 4.6vw, 3.7rem);
 }
 
+/* Rotating "We deliver ..." line (homepage hero) */
+.rotator-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 10px;
+  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.rotator {
+  display: inline-grid;
+  overflow: hidden;
+  height: 1.5em;
+  font-weight: 700;
+  color: var(--teal-deep);
+  border-bottom: 3px solid var(--teal);
+}
+.rotator > span {
+  grid-area: 1 / 1;
+  white-space: nowrap;
+  transform: translateY(110%);
+  opacity: 0;
+  transition:
+    transform 0.7s var(--ease),
+    opacity 0.7s var(--ease);
+}
+.rotator > span.is-active,
+.no-js .rotator > span:first-child {
+  transform: none;
+  opacity: 1;
+}
+.rotator > span.is-leaving {
+  transform: translateY(-110%);
+  opacity: 0;
+}
+@media (max-width: 560px) {
+  .rotator > span {
+    white-space: normal;
+  }
+  .rotator {
+    height: auto;
+    min-height: 1.5em;
+  }
+}
+
 /* Authority map panel */
 .authority {
   position: relative;

@@ -1,213 +1,607 @@
 <!doctype html>
 <html lang="en" class="no-js">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AIM™ AI Governance | Expotech Inc</title>
-<meta name="description" content="AIM™, the Agha Implementation Model: a structured approach for designing, deploying, governing and scaling AI agents while keeping human authority clearly defined.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="assets/img/logo.png">
-<script>document.documentElement.classList.remove('no-js');setTimeout(function(){if(!window.EXP_READY)document.documentElement.classList.add('no-js')},2500);</script>
-<script src="assets/js/main.js" defer></script>
-</head>
-<body data-page="aim">
-<div data-include="header"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AIM™ AI Governance | Expotech Inc</title>
+    <meta
+      name="description"
+      content="AIM™, the Agha Implementation Model: a structured approach for designing, deploying, governing and scaling AI agents while keeping human authority clearly defined."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/logo.png" />
+    <script>
+      document.documentElement.classList.remove("no-js");
+      setTimeout(function () {
+        if (!window.EXP_READY) document.documentElement.classList.add("no-js");
+      }, 2500);
+    </script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body data-page="aim">
+    <div data-include="header"></div>
 
-<main id="main">
-
-<section class="page-hero">
-  <div class="page-hero__media"><img class="kenburns" src="assets/img/aim-banner.png" alt="" style="object-position:80% 50%;opacity:.55"></div>
-  <div class="container page-hero__inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb" data-reveal="up"><a href="index.html">Home</a><i data-icon="chevron-right"></i><span style="color:#fff">AIM™ AI Governance</span></nav>
-    <div class="page-hero__content">
-      <span class="eyebrow" data-reveal="up">AIM™ · The Agha Implementation Model</span>
-      <h1 class="words">When machines can act, <strong>who remains in command?</strong></h1>
-      <p class="lead" data-reveal="up" style="--delay:.3s">AIM™ helps organizations move from simply building intelligent agents to building controlled, accountable AI systems designed for enterprise deployment.</p>
-      <div class="btn-row" data-reveal="up" style="--delay:.45s">
-        <a class="btn btn--primary btn--lg" href="https://www.aimcommandcenter.com/" target="_blank" rel="noopener">Enter the AIM Command Center <i data-icon="arrow-up-right"></i></a>
-        <a class="btn btn--light btn--lg" href="contact.html">Talk to us about AIM™</a>
-      </div>
-    </div>
-  </div>
-  <div class="hero-wave" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="currentColor" d="M0 60V30C240 0 480 0 720 22s480 38 720 8v30z"/></svg></div>
-</section>
-
-<!-- Why -->
-<section class="section">
-  <div class="container split">
-    <div class="stack" data-reveal="left">
-      <span class="eyebrow">Why it matters</span>
-      <h2 class="h-section">Capability grows. <strong>Authority must be designed.</strong></h2>
-      <p class="lead">Artificial intelligence is rapidly moving beyond answering questions and generating content. AI agents can now analyze, decide, communicate, access enterprise systems, delegate work, initiate transactions, and take action.</p>
-      <p>That creates a new challenge for every organization: <strong style="color:var(--ink)">how do you give AI enough authority to create value, without surrendering human control?</strong> The more capable the agent becomes, the more important its authority boundaries become. Expotech uses AIM™ to establish those boundaries before autonomy is expanded.</p>
-    </div>
-    <div class="card card--soft" data-reveal="right" style="padding:clamp(26px,3vw,40px)">
-      <span class="eyebrow eyebrow--plain" style="color:var(--muted)">An agent may be capable of</span>
-      <ul class="checklist" data-stagger="up" data-stagger-step="80">
-        <li><i data-icon="database"></i><span>Accessing databases</span></li>
-        <li><i data-icon="message"></i><span>Communicating with customers</span></li>
-        <li><i data-icon="receipt"></i><span>Generating purchase orders</span></li>
-        <li><i data-icon="pen"></i><span>Modifying business records</span></li>
-        <li><i data-icon="share"></i><span>Interacting with other agents</span></li>
-        <li><i data-icon="server"></i><span>Initiating actions across multiple enterprise systems</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Eight dimensions -->
-<section class="section section--soft">
-  <div class="container">
-    <div class="section-head section-head--split">
-      <div>
-        <span class="eyebrow" data-reveal="up">The authority envelope</span>
-        <h2 class="h-section words">Eight dimensions of <strong>agent authority</strong></h2>
-      </div>
-      <p class="lead muted" data-reveal="up">AIM™ answers not only what an AI agent can do, but the more important question: what should it be allowed to do?</p>
-    </div>
-    <div class="split split--wide-media" style="align-items:start">
-      <figure class="frame" data-reveal="zoom" style="margin:0">
-        <div class="zoom zoomable" data-lightbox="assets/img/aim-banner.png" data-title="AIM™ wheel: purpose, data, action, financial, time, delegation, system, consequence">
-          <img src="assets/img/aim-banner.png" alt="AIM™ wheel showing the eight authority dimensions">
-          <span class="zoomable__hint"><i data-icon="zoom-in"></i>Click to zoom</span>
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero__media">
+          <img
+            class="kenburns"
+            src="assets/img/aim-banner.png"
+            alt=""
+            style="object-position: 80% 50%; opacity: 0.55"
+          />
         </div>
-      </figure>
-      <div class="dims" data-stagger="up" data-stagger-step="70" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr))">
-        <div class="dim"><span class="icon-box"><i data-icon="target"></i></span><div><h3>Purpose</h3><p>The permitted purpose the agent serves.</p></div></div>
-        <div class="dim"><span class="icon-box"><i data-icon="database"></i></span><div><h3>Data</h3><p>What information it may access.</p></div></div>
-        <div class="dim"><span class="icon-box"><i data-icon="zap"></i></span><div><h3>Action</h3><p>Which actions it may take.</p></div></div>
-        <div class="dim"><span class="icon-box"><i data-icon="dollar"></i></span><div><h3>Financial</h3><p>Whether it can spend or transact, and how much.</p></div></div>
-        <div class="dim"><span class="icon-box"><i data-icon="clock"></i></span><div><h3>Time</h3><p>When it is allowed to operate.</p></div></div>
-        <div class="dim"><span class="icon-box"><i data-icon="share"></i></span><div><h3>Delegation</h3><p>Whether it can hand authority to another agent.</p></div></div>
-        <div class="dim"><span class="icon-box"><i data-icon="server"></i></span><div><h3>System</h3><p>Which systems it may reach.</p></div></div>
-        <div class="dim"><span class="icon-box"><i data-icon="alert"></i></span><div><h3>Consequence</h3><p>The boundaries on what its actions can cause.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="container page-hero__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb" data-reveal="up">
+            <a href="index.html">Home</a><i data-icon="chevron-right"></i
+            ><span style="color: #fff">AIM™ AI Governance</span>
+          </nav>
+          <div class="page-hero__content">
+            <span class="eyebrow" data-reveal="up"
+              >AIM™ · The Agha Implementation Model</span
+            >
+            <h1 class="words">
+              When machines can act, <strong>who remains in command?</strong>
+            </h1>
+            <p class="lead" data-reveal="up" style="--delay: 0.3s">
+              AIM™ helps organizations move from simply building intelligent
+              agents to building controlled, accountable AI systems designed for
+              enterprise deployment.
+            </p>
+            <div class="btn-row" data-reveal="up" style="--delay: 0.45s">
+              <a
+                class="btn btn--primary btn--lg"
+                href="https://www.aimcommandcenter.com/"
+                target="_blank"
+                rel="noopener"
+                >Enter the AIM Command Center <i data-icon="arrow-up-right"></i
+              ></a>
+              <a class="btn btn--light btn--lg" href="contact.html"
+                >Talk to us about AIM™</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+          <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path
+              fill="currentColor"
+              d="M0 60V30C240 0 480 0 720 22s480 38 720 8v30z"
+            />
+          </svg>
+        </div>
+      </section>
 
-<!-- Lifecycle -->
-<section class="section">
-  <div class="container split" style="align-items:start">
-    <div class="stack" data-reveal="left" style="position:sticky;top:120px">
-      <span class="eyebrow">The AIM™ lifecycle</span>
-      <h2 class="h-section">From concept <strong>to retirement</strong></h2>
-      <p>AIM™ supports AI throughout its lifecycle, from concept and development through deployment, operation, monitoring, and eventual retirement.</p>
-      <p style="font-weight:700;color:var(--ink)">The objective is not to prevent AI from acting. It is to make certain that AI acts within the authority humans intended to give it.</p>
-    </div>
-    <ol class="timeline" data-stagger="left" data-stagger-step="110">
-      <li><h3><small>01</small>Discover</h3><p>Find where AI agents are already operating, or being proposed, across the organization.</p></li>
-      <li><h3><small>02</small>Classify</h3><p>Classify agents according to capability, autonomy, access, and potential consequences.</p></li>
-      <li><h3><small>03</small>Design</h3><p>Design appropriate authority boundaries and human controls.</p></li>
-      <li><h3><small>04</small>Authorize</h3><p>Authorize specific actions, systems, data, financial limits, and delegation rights.</p></li>
-      <li><h3><small>05</small>Monitor</h3><p>Monitor agent behavior and detect movement outside approved boundaries.</p></li>
-      <li><h3><small>06</small>Intervene</h3><p>Intervene when predetermined red lines or tripwires are reached.</p></li>
-      <li><h3><small>07</small>Revoke</h3><p>Revoke authority and return systems to a safe state when necessary.</p></li>
-    </ol>
-  </div>
-</section>
+      <!-- Why -->
+      <section class="section">
+        <div class="container split">
+          <div class="stack" data-reveal="left">
+            <span class="eyebrow">Why it matters</span>
+            <h2 class="h-section">
+              Capability grows. <strong>Authority must be designed.</strong>
+            </h2>
+            <p class="lead">
+              Artificial intelligence is rapidly moving beyond answering
+              questions and generating content. AI agents can now analyze,
+              decide, communicate, access enterprise systems, delegate work,
+              initiate transactions, and take action.
+            </p>
+            <p>
+              That creates a new challenge for every organization:
+              <strong style="color: var(--ink)"
+                >how do you give AI enough authority to create value, without
+                surrendering human control?</strong
+              >
+              The more capable the agent becomes, the more important its
+              authority boundaries become. Expotech uses AIM™ to establish those
+              boundaries before autonomy is expanded.
+            </p>
+          </div>
+          <div
+            class="card card--soft"
+            data-reveal="right"
+            style="padding: clamp(26px, 3vw, 40px)"
+          >
+            <span class="eyebrow eyebrow--plain" style="color: var(--muted)"
+              >An agent may be capable of</span
+            >
+            <ul class="checklist" data-stagger="up" data-stagger-step="80">
+              <li>
+                <i data-icon="database"></i><span>Accessing databases</span>
+              </li>
+              <li>
+                <i data-icon="message"></i
+                ><span>Communicating with customers</span>
+              </li>
+              <li>
+                <i data-icon="receipt"></i
+                ><span>Generating purchase orders</span>
+              </li>
+              <li>
+                <i data-icon="pen"></i><span>Modifying business records</span>
+              </li>
+              <li>
+                <i data-icon="share"></i
+                ><span>Interacting with other agents</span>
+              </li>
+              <li>
+                <i data-icon="server"></i
+                ><span
+                  >Initiating actions across multiple enterprise systems</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-<!-- Command Center -->
-<section class="section section--darker glow">
-  <div class="container">
-    <div class="section-head section-head--split">
-      <div>
-        <span class="eyebrow" data-reveal="up">The AIM Command Center™</span>
-        <h2 class="h-section words">Principles, turned into <strong>practical tools</strong></h2>
-      </div>
-      <p class="lead" data-reveal="up">The operational environment supporting the AIM methodology: assess AI autonomy, define authority boundaries, identify risk, and train your people.</p>
-    </div>
-    <div class="grid grid--4" data-stagger="up" data-stagger-step="110">
-      <div class="card card--dark card--hover"><span class="icon-box"><i data-icon="search"></i></span><h3>DxAIM™ · Diagnose</h3><p>Evaluate AI agents across key autonomy and risk dimensions to see where authority, exposure, and controls need attention.</p><span class="card__corner"></span></div>
-      <div class="card card--dark card--hover"><span class="icon-box"><i data-icon="wrench"></i></span><h3>RxAIM™ · Respond</h3><p>Translate assessment findings into practical recommendations for boundaries, controls, oversight, and remediation.</p><span class="card__corner"></span></div>
-      <div class="card card--dark card--hover"><span class="icon-box"><i data-icon="cap"></i></span><h3>AIM Academy</h3><p>Learn to design, manage, and govern AI agents through instruction, scenarios, simulations, and enterprise use cases.</p><span class="card__corner"></span></div>
-      <div class="card card--dark card--hover"><span class="icon-box"><i data-icon="award"></i></span><h3>Certification</h3><p>Develop measurable competency in AIM principles and the responsible management of autonomous AI systems.</p><span class="card__corner"></span></div>
-    </div>
-    <div style="margin-top:clamp(48px,6vw,72px)">
-      <span class="eyebrow" data-reveal="up" style="margin-bottom:20px">From the book to the Command Center</span>
-      <div class="flow" data-stagger="up" data-stagger-step="140" style="margin-top:20px">
-        <div class="flow__step"><b>01 · Theory</b><h3>The Last Command</h3><p>Establishes the concepts and methodology.</p></div>
-        <div class="flow__step"><b>02 · Assessment</b><h3>DxAIM™</h3><p>Assesses AI autonomy and exposure.</p></div>
-        <div class="flow__step"><b>03 · Implementation</b><h3>RxAIM™</h3><p>Translates findings into controls and corrective actions.</p></div>
-        <div class="flow__step"><b>04 · Competency</b><h3>Academy &amp; Certification</h3><p>Build the human skills to manage autonomous systems.</p></div>
-      </div>
-    </div>
-    <div class="grid grid--3" data-stagger="zoom" style="margin-top:40px">
-      <div class="card card--dark" style="border-top:3px solid var(--teal)"><span style="font-size:24px;font-weight:800;color:var(--teal)">AIM-CP™</span><span style="color:#fff">AIM™ Certified Practitioner</span></div>
-      <div class="card card--dark" style="border-top:3px solid var(--teal)"><span style="font-size:24px;font-weight:800;color:var(--teal)">AIM-CA™</span><span style="color:#fff">AIM™ Certified Architect</span></div>
-      <div class="card card--dark" style="border-top:3px solid var(--teal)"><span style="font-size:24px;font-weight:800;color:var(--teal)">AIM-EL™</span><span style="color:#fff">AIM™ Enterprise Leader</span></div>
-    </div>
-  </div>
-</section>
+      <!-- Eight dimensions -->
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <span class="eyebrow" data-reveal="up"
+                >The authority envelope</span
+              >
+              <h2 class="h-section words">
+                Eight dimensions of <strong>agent authority</strong>
+              </h2>
+            </div>
+            <p class="lead muted" data-reveal="up">
+              AIM™ answers not only what an AI agent can do, but the more
+              important question: what should it be allowed to do?
+            </p>
+          </div>
+          <div class="split split--wide-media" style="align-items: start">
+            <figure class="frame" data-reveal="zoom" style="margin: 0">
+              <div
+                class="zoom zoomable"
+                data-lightbox="assets/img/aim-banner.png"
+                data-title="AIM™ wheel: purpose, data, action, financial, time, delegation, system, consequence"
+              >
+                <img
+                  src="assets/img/aim-banner.png"
+                  alt="AIM™ wheel showing the eight authority dimensions"
+                />
+                <span class="zoomable__hint"
+                  ><i data-icon="zoom-in"></i>Click to zoom</span
+                >
+              </div>
+            </figure>
+            <div
+              class="dims"
+              data-stagger="up"
+              data-stagger-step="70"
+              style="
+                grid-template-columns: repeat(
+                  auto-fit,
+                  minmax(min(100%, 210px), 1fr)
+                );
+              "
+            >
+              <div class="dim">
+                <span class="icon-box"><i data-icon="target"></i></span>
+                <div>
+                  <h3>Purpose</h3>
+                  <p>The permitted purpose the agent serves.</p>
+                </div>
+              </div>
+              <div class="dim">
+                <span class="icon-box"><i data-icon="database"></i></span>
+                <div>
+                  <h3>Data</h3>
+                  <p>What information it may access.</p>
+                </div>
+              </div>
+              <div class="dim">
+                <span class="icon-box"><i data-icon="zap"></i></span>
+                <div>
+                  <h3>Action</h3>
+                  <p>Which actions it may take.</p>
+                </div>
+              </div>
+              <div class="dim">
+                <span class="icon-box"><i data-icon="dollar"></i></span>
+                <div>
+                  <h3>Financial</h3>
+                  <p>Whether it can spend or transact, and how much.</p>
+                </div>
+              </div>
+              <div class="dim">
+                <span class="icon-box"><i data-icon="clock"></i></span>
+                <div>
+                  <h3>Time</h3>
+                  <p>When it is allowed to operate.</p>
+                </div>
+              </div>
+              <div class="dim">
+                <span class="icon-box"><i data-icon="share"></i></span>
+                <div>
+                  <h3>Delegation</h3>
+                  <p>Whether it can hand authority to another agent.</p>
+                </div>
+              </div>
+              <div class="dim">
+                <span class="icon-box"><i data-icon="server"></i></span>
+                <div>
+                  <h3>System</h3>
+                  <p>Which systems it may reach.</p>
+                </div>
+              </div>
+              <div class="dim">
+                <span class="icon-box"><i data-icon="alert"></i></span>
+                <div>
+                  <h3>Consequence</h3>
+                  <p>The boundaries on what its actions can cause.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- Academy -->
-<section class="section">
-  <div class="container split">
-    <div class="stack" data-reveal="left">
-      <span class="eyebrow">AIM Academy</span>
-      <h2 class="h-section">Learn to command AI, <strong>not simply use it</strong></h2>
-      <p class="lead">The next generation of professionals will need skills that extend beyond prompting AI.</p>
-      <p>Executives, managers, developers, architects, cybersecurity professionals, and business leaders increasingly need to understand how to assign authority to AI, establish limits, supervise autonomous behavior, recognize dangerous escalation, and retain the ability to intervene. The Academy combines instruction with scenario-based learning and simulation.</p>
-      <p style="font-weight:700;color:var(--ink)">This turns AI governance from an abstract policy discussion into a practical management discipline.</p>
-    </div>
-    <div class="card card--soft" data-reveal="right" style="padding:clamp(26px,3vw,40px)">
-      <span class="eyebrow eyebrow--plain" style="color:var(--muted)">Participants decide, in realistic situations</span>
-      <ul class="checklist" data-stagger="up" data-stagger-step="70">
-        <li><i data-icon="key"></i><span>What authority should this agent receive?</span></li>
-        <li><i data-icon="database"></i><span>What information should it access?</span></li>
-        <li><i data-icon="dollar"></i><span>Can it spend money or execute transactions?</span></li>
-        <li><i data-icon="share"></i><span>Can it delegate authority to another agent?</span></li>
-        <li><i data-icon="users"></i><span>When should human approval be mandatory?</span></li>
-        <li><i data-icon="alert"></i><span>What happens when an agent approaches or crosses a boundary?</span></li>
-        <li><i data-icon="power"></i><span>How can its authority be revoked?</span></li>
-      </ul>
-    </div>
-  </div>
-</section>
+      <!-- Lifecycle -->
+      <section class="section">
+        <div class="container split" style="align-items: start">
+          <div
+            class="stack"
+            data-reveal="left"
+            style="position: sticky; top: 120px"
+          >
+            <span class="eyebrow">The AIM™ lifecycle</span>
+            <h2 class="h-section">
+              From concept <strong>to retirement</strong>
+            </h2>
+            <p>
+              AIM™ supports AI throughout its lifecycle, from concept and
+              development through deployment, operation, monitoring, and
+              eventual retirement.
+            </p>
+            <p style="font-weight: 700; color: var(--ink)">
+              The objective is not to prevent AI from acting. It is to make
+              certain that AI acts within the authority humans intended to give
+              it.
+            </p>
+          </div>
+          <ol class="timeline" data-stagger="left" data-stagger-step="110">
+            <li>
+              <h3><small>01</small>Discover</h3>
+              <p>
+                Find where AI agents are already operating, or being proposed,
+                across the organization.
+              </p>
+            </li>
+            <li>
+              <h3><small>02</small>Classify</h3>
+              <p>
+                Classify agents according to capability, autonomy, access, and
+                potential consequences.
+              </p>
+            </li>
+            <li>
+              <h3><small>03</small>Design</h3>
+              <p>Design appropriate authority boundaries and human controls.</p>
+            </li>
+            <li>
+              <h3><small>04</small>Authorize</h3>
+              <p>
+                Authorize specific actions, systems, data, financial limits, and
+                delegation rights.
+              </p>
+            </li>
+            <li>
+              <h3><small>05</small>Monitor</h3>
+              <p>
+                Monitor agent behavior and detect movement outside approved
+                boundaries.
+              </p>
+            </li>
+            <li>
+              <h3><small>06</small>Intervene</h3>
+              <p>
+                Intervene when predetermined red lines or tripwires are reached.
+              </p>
+            </li>
+            <li>
+              <h3><small>07</small>Revoke</h3>
+              <p>
+                Revoke authority and return systems to a safe state when
+                necessary.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-<!-- Book -->
-<section class="section section--dark glow" id="book">
-  <div class="container book">
-    <div class="book__cover" data-reveal="zoom"><img src="assets/img/book-last-command.png" alt="Cover of The Last Command by Dr. Raed (Rod) Ghani Agha" width="384" height="588"></div>
-    <div class="stack">
-      <span class="eyebrow" data-reveal="up">The book behind the methodology</span>
-      <h2 class="book__title" style="color:#fff" data-reveal="up">The Last Command</h2>
-      <p class="book__subtitle" data-reveal="up">Building Powerful AI Without Surrendering Human Control</p>
-      <p data-reveal="up">By Dr. Raed (Rod) Ghani Agha. The book examines the transition from AI as a tool to AI as an autonomous actor within organizations. It introduces AIM™ and explores the architecture, governance principles, authority boundaries, risk models, organizational controls, and leadership practices required to deploy powerful AI without unintentionally transferring control from people to machines.</p>
-      <p data-reveal="up" class="small" style="color:#bdbdbd">Written for executives, technology leaders, AI developers, cybersecurity professionals, business leaders, educators, and students.</p>
-      <div class="btn-row" data-reveal="up"><a class="btn btn--primary" href="contact.html">Notify me when it's available <i data-icon="arrow-right"></i></a><span class="chip chip--outline" style="border-color:#777;color:#bbb">[Buy link once available]</span></div>
-    </div>
-  </div>
-</section>
+      <!-- Command Center -->
+      <section class="section section--darker glow">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <span class="eyebrow" data-reveal="up"
+                >The AIM Command Center™</span
+              >
+              <h2 class="h-section words">
+                Principles, turned into <strong>practical tools</strong>
+              </h2>
+            </div>
+            <p class="lead" data-reveal="up">
+              The operational environment supporting the AIM methodology: assess
+              AI autonomy, define authority boundaries, identify risk, and train
+              your people.
+            </p>
+          </div>
+          <div class="grid grid--4" data-stagger="up" data-stagger-step="110">
+            <div class="card card--dark card--hover">
+              <span class="icon-box"><i data-icon="search"></i></span>
+              <h3>DxAIM™ · Diagnose</h3>
+              <p>
+                Evaluate AI agents across key autonomy and risk dimensions to
+                see where authority, exposure, and controls need attention.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--dark card--hover">
+              <span class="icon-box"><i data-icon="wrench"></i></span>
+              <h3>RxAIM™ · Respond</h3>
+              <p>
+                Translate assessment findings into practical recommendations for
+                boundaries, controls, oversight, and remediation.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--dark card--hover">
+              <span class="icon-box"><i data-icon="cap"></i></span>
+              <h3>AIM Academy</h3>
+              <p>
+                Learn to design, manage, and govern AI agents through
+                instruction, scenarios, simulations, and enterprise use cases.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--dark card--hover">
+              <span class="icon-box"><i data-icon="award"></i></span>
+              <h3>Certification</h3>
+              <p>
+                Develop measurable competency in AIM principles and the
+                responsible management of autonomous AI systems.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+          </div>
+          <div style="margin-top: clamp(48px, 6vw, 72px)">
+            <span class="eyebrow" data-reveal="up" style="margin-bottom: 20px"
+              >From the book to the Command Center</span
+            >
+            <div
+              class="flow"
+              data-stagger="up"
+              data-stagger-step="140"
+              style="margin-top: 20px"
+            >
+              <div class="flow__step">
+                <b>01 · Theory</b>
+                <h3>The Last Command</h3>
+                <p>Establishes the concepts and methodology.</p>
+              </div>
+              <div class="flow__step">
+                <b>02 · Assessment</b>
+                <h3>DxAIM™</h3>
+                <p>Assesses AI autonomy and exposure.</p>
+              </div>
+              <div class="flow__step">
+                <b>03 · Implementation</b>
+                <h3>RxAIM™</h3>
+                <p>Translates findings into controls and corrective actions.</p>
+              </div>
+              <div class="flow__step">
+                <b>04 · Competency</b>
+                <h3>Academy &amp; Certification</h3>
+                <p>Build the human skills to manage autonomous systems.</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid grid--3"
+            data-stagger="zoom"
+            style="margin-top: 40px"
+          >
+            <div
+              class="card card--dark"
+              style="border-top: 3px solid var(--teal)"
+            >
+              <span
+                style="font-size: 24px; font-weight: 800; color: var(--teal)"
+                >AIM-CP™</span
+              ><span style="color: #fff">AIM™ Certified Practitioner</span>
+            </div>
+            <div
+              class="card card--dark"
+              style="border-top: 3px solid var(--teal)"
+            >
+              <span
+                style="font-size: 24px; font-weight: 800; color: var(--teal)"
+                >AIM-CA™</span
+              ><span style="color: #fff">AIM™ Certified Architect</span>
+            </div>
+            <div
+              class="card card--dark"
+              style="border-top: 3px solid var(--teal)"
+            >
+              <span
+                style="font-size: 24px; font-weight: 800; color: var(--teal)"
+                >AIM-EL™</span
+              ><span style="color: #fff">AIM™ Enterprise Leader</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- Closing statement -->
-<section class="section">
-  <div class="container">
-    <div class="quote" data-reveal="zoom">
-      <span class="quote__mark" aria-hidden="true">“</span>
-      <blockquote>Intelligence can be delegated. <strong>Authority must be designed.</strong></blockquote>
-      <span class="accent-bar"></span>
-      <cite>Build AI that knows its boundaries <span>· Discover AIM™ · Experience AIM Academy · Put your AI agents to the test</span></cite>
-    </div>
-  </div>
-</section>
+      <!-- Academy -->
+      <section class="section">
+        <div class="container split">
+          <div class="stack" data-reveal="left">
+            <span class="eyebrow">AIM Academy</span>
+            <h2 class="h-section">
+              Learn to command AI, <strong>not simply use it</strong>
+            </h2>
+            <p class="lead">
+              The next generation of professionals will need skills that extend
+              beyond prompting AI.
+            </p>
+            <p>
+              Executives, managers, developers, architects, cybersecurity
+              professionals, and business leaders increasingly need to
+              understand how to assign authority to AI, establish limits,
+              supervise autonomous behavior, recognize dangerous escalation, and
+              retain the ability to intervene. The Academy combines instruction
+              with scenario-based learning and simulation.
+            </p>
+            <p style="font-weight: 700; color: var(--ink)">
+              This turns AI governance from an abstract policy discussion into a
+              practical management discipline.
+            </p>
+          </div>
+          <div
+            class="card card--soft"
+            data-reveal="right"
+            style="padding: clamp(26px, 3vw, 40px)"
+          >
+            <span class="eyebrow eyebrow--plain" style="color: var(--muted)"
+              >Participants decide, in realistic situations</span
+            >
+            <ul class="checklist" data-stagger="up" data-stagger-step="70">
+              <li>
+                <i data-icon="key"></i
+                ><span>What authority should this agent receive?</span>
+              </li>
+              <li>
+                <i data-icon="database"></i
+                ><span>What information should it access?</span>
+              </li>
+              <li>
+                <i data-icon="dollar"></i
+                ><span>Can it spend money or execute transactions?</span>
+              </li>
+              <li>
+                <i data-icon="share"></i
+                ><span>Can it delegate authority to another agent?</span>
+              </li>
+              <li>
+                <i data-icon="users"></i
+                ><span>When should human approval be mandatory?</span>
+              </li>
+              <li>
+                <i data-icon="alert"></i
+                ><span
+                  >What happens when an agent approaches or crosses a
+                  boundary?</span
+                >
+              </li>
+              <li>
+                <i data-icon="power"></i
+                ><span>How can its authority be revoked?</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-<section class="cta-band">
-  <div class="container cta-band__inner">
-    <div data-reveal="left" style="flex:1 1 520px">
-      <h2>Bring your AI agents <strong>under clear authority.</strong></h2>
-      <p>Start with an AIM™ assessment of the agents you already run, or plan to.</p>
-    </div>
-    <div class="btn-row" data-reveal="right">
-      <a class="btn btn--dark btn--lg" href="contact.html">Request an assessment <i data-icon="arrow-right"></i></a>
-    </div>
-  </div>
-</section>
+      <!-- Book -->
+      <section class="section section--dark glow" id="book">
+        <div class="container book">
+          <div class="book__cover" data-reveal="zoom">
+            <img
+              src="assets/img/book-last-command.png"
+              alt="Cover of The Last Command by Dr. Raed (Rod) Ghani Agha"
+              width="384"
+              height="588"
+            />
+          </div>
+          <div class="stack">
+            <span class="eyebrow" data-reveal="up"
+              >The book behind the methodology</span
+            >
+            <h2 class="book__title" style="color: #fff" data-reveal="up">
+              The Last Command
+            </h2>
+            <p class="book__subtitle" data-reveal="up">
+              Building Powerful AI Without Surrendering Human Control
+            </p>
+            <p data-reveal="up">
+              By Dr. Raed (Rod) Ghani Agha. The book examines the transition
+              from AI as a tool to AI as an autonomous actor within
+              organizations. It introduces AIM™ and explores the architecture,
+              governance principles, authority boundaries, risk models,
+              organizational controls, and leadership practices required to
+              deploy powerful AI without unintentionally transferring control
+              from people to machines.
+            </p>
+            <p data-reveal="up" class="small" style="color: #bdbdbd">
+              Written for executives, technology leaders, AI developers,
+              cybersecurity professionals, business leaders, educators, and
+              students.
+            </p>
+            <div class="btn-row" data-reveal="up">
+              <a class="btn btn--primary" href="contact.html"
+                >Notify me when it's available
+                <i data-icon="arrow-right"></i></a
+              ><span
+                class="chip chip--outline"
+                style="border-color: #777; color: #bbb"
+                >[Buy link once available]</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-</main>
-<div data-include="footer"></div>
-</body>
+      <!-- Closing statement -->
+      <section class="section">
+        <div class="container">
+          <div class="quote" data-reveal="zoom">
+            <span class="quote__mark" aria-hidden="true">“</span>
+            <blockquote>
+              Intelligence can be delegated.
+              <strong>Authority must be designed.</strong>
+            </blockquote>
+            <span class="accent-bar"></span>
+            <cite
+              >Build AI that knows its boundaries
+              <span
+                >· Discover AIM™ · Experience AIM Academy · Put your AI agents
+                to the test</span
+              ></cite
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container cta-band__inner">
+          <div data-reveal="left" style="flex: 1 1 520px">
+            <h2>
+              Bring your AI agents <strong>under clear authority.</strong>
+            </h2>
+            <p>
+              Start with an AIM™ assessment of the agents you already run, or
+              plan to.
+            </p>
+          </div>
+          <div class="btn-row" data-reveal="right">
+            <a class="btn btn--dark btn--lg" href="contact.html"
+              >Request an assessment <i data-icon="arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-include="footer"></div>
+  </body>
 </html>

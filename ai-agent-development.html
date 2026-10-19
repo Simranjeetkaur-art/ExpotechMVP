@@ -1,171 +1,471 @@
 <!doctype html>
 <html lang="en" class="no-js">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AI Agent Development | Expotech Inc</title>
-<meta name="description" content="Custom AI agents that automate tasks, make intelligent decisions and work across your systems, built with authority boundaries defined by AIM™.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
-<link rel="icon" href="assets/img/logo.png">
-<script>document.documentElement.classList.remove('no-js');setTimeout(function(){if(!window.EXP_READY)document.documentElement.classList.add('no-js')},2500);</script>
-<script src="assets/js/main.js" defer></script>
-</head>
-<body data-page="ai">
-<div data-include="header"></div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Agent Development | Expotech Inc</title>
+    <meta
+      name="description"
+      content="Custom AI agents that automate tasks, make intelligent decisions and work across your systems, built with authority boundaries defined by AIM™."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="assets/img/logo.png" />
+    <script>
+      document.documentElement.classList.remove("no-js");
+      setTimeout(function () {
+        if (!window.EXP_READY) document.documentElement.classList.add("no-js");
+      }, 2500);
+    </script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body data-page="ai">
+    <div data-include="header"></div>
 
-<main id="main">
-
-<section class="page-hero">
-  <div class="page-hero__media"><img class="kenburns" src="assets/img/ai-hero.jpg" alt="" style="object-position:70% 30%"></div>
-  <div class="container page-hero__inner">
-    <nav class="breadcrumb" aria-label="Breadcrumb" data-reveal="up"><a href="index.html">Home</a><i data-icon="chevron-right"></i><span>Services</span><i data-icon="chevron-right"></i><span style="color:#fff">AI Agent Development</span></nav>
-    <div class="page-hero__content">
-      <span class="eyebrow" data-reveal="up">Expotech services</span>
-      <h1 class="words">AI agents that <strong>work for your business</strong></h1>
-      <p class="lead" data-reveal="up" style="--delay:.3s">We design and develop custom AI agents that automate tasks, make intelligent decisions, and interact seamlessly with users and systems.</p>
-      <div class="btn-row" data-reveal="up" style="--delay:.45s">
-        <a class="btn btn--primary btn--lg" href="contact.html">Discuss your agent <i data-icon="arrow-right"></i></a>
-        <a class="btn btn--light btn--lg" href="aim-governance.html">How AIM™ governs it</a>
-      </div>
-    </div>
-  </div>
-  <div class="hero-wave" aria-hidden="true"><svg viewBox="0 0 1440 60" preserveAspectRatio="none"><path fill="currentColor" d="M0 60V30C240 0 480 0 720 22s480 38 720 8v30z"/></svg></div>
-</section>
-
-<!-- Intro -->
-<section class="section">
-  <div class="container split">
-    <div class="stack" data-reveal="left">
-      <span class="eyebrow">Human-controlled autonomy</span>
-      <h2 class="h-section">AI agent development, <strong>with people in command</strong></h2>
-      <p class="lead">Our AI agents are built to understand context, learn from data, and operate reliably, helping your business scale faster while reducing manual effort.</p>
-      <p>Expotech develops advanced AI agents and agentic systems designed to automate complex business processes, coordinate workflows, analyze information, and take intelligent action across enterprise environments. Our approach goes beyond traditional AI by focusing on <strong style="color:var(--ink)">controlled autonomy</strong>: giving AI the authority it needs to perform while keeping people firmly in command.</p>
-      <ul class="checklist" data-stagger="up">
-        <li><i data-icon="check"></i><span>Customer support agents</span></li>
-        <li><i data-icon="check"></i><span>Sales assistants and lead generation</span></li>
-        <li><i data-icon="check"></i><span>Internal workflow automation agents</span></li>
-        <li><i data-icon="check"></i><span>Agentic systems across the enterprise</span></li>
-      </ul>
-    </div>
-    <div data-reveal="zoom" style="max-width:520px;margin:0 auto">
-      <img src="assets/img/ai-agent-circle.png" alt="AI agent robot in front of a data screen" style="animation:bob 8s ease-in-out infinite" width="800" height="711">
-    </div>
-  </div>
-</section>
-
-<!-- Services -->
-<section class="section section--soft">
-  <div class="container">
-    <div class="section-head section-head--center">
-      <span class="eyebrow" data-reveal="up">Our AI agent development services</span>
-      <h2 class="h-section words">From idea to deployment, <strong>agents that deliver value</strong></h2>
-    </div>
-    <div class="grid grid--3" data-stagger="up" data-stagger-step="110">
-      <div class="card card--hover"><span class="icon-box"><i data-icon="compass"></i></span><h3>Custom AI Agent Design</h3><p>We analyze your business needs and design AI agents with the right logic, workflows, and intelligence to solve real problems.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="link"></i></span><h3>System &amp; API Integration</h3><p>Seamless integration with CRMs, ERPs, databases, third-party tools, and internal systems to ensure smooth data flow and automation.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="message"></i></span><h3>Conversational AI Agents</h3><p>Smart, human-like AI agents for customer support, lead generation, onboarding, and internal assistance, available 24/7.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="workflow"></i></span><h3>Task Automation &amp; Workflow Agents</h3><p>AI agents that automate repetitive processes such as data entry, reporting, scheduling, monitoring, and decision support.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="chart"></i></span><h3>Data-Driven Intelligence</h3><p>Agents trained to analyze data, generate insights, and support better business decisions in real time.</p><span class="card__corner"></span></div>
-      <div class="card card--hover"><span class="icon-box"><i data-icon="shield-check"></i></span><h3>Secure &amp; Scalable Solutions</h3><p>We build AI agents with security, compliance, and scalability in mind, ready to grow with your business.</p><span class="card__corner"></span></div>
-    </div>
-  </div>
-</section>
-
-<!-- Capability vs authority -->
-<section class="section section--darker glow">
-  <div class="container split">
-    <div class="stack" data-reveal="left">
-      <span class="eyebrow">Controlled autonomy</span>
-      <h2 class="h-section">The question changes from <strong>"what can the AI do?"</strong></h2>
-      <p class="lead" style="color:#fff">to <em>"what should the AI be allowed to do?"</em></p>
-      <p>Expotech approaches AI agent development with human authority at the center of the architecture. Using AIM™, the Agha Implementation Model, organizations define an agent's permitted purpose, data access, actions, financial authority, operating time, delegation authority, system access, and consequence boundaries before autonomous capabilities are expanded.</p>
-      <div class="btn-row"><a class="btn btn--primary" href="aim-governance.html">Learn the methodology <i data-icon="arrow-right"></i></a><a class="btn btn--light" href="https://www.aimcommandcenter.com/" target="_blank" rel="noopener">AIM Command Center <i data-icon="arrow-up-right"></i></a></div>
-    </div>
-    <div class="authority" data-tilt="4" data-reveal="right">
-      <div class="authority__panel" data-tilt-target>
-        <div class="authority__top"><span class="authority__label"><span class="live-dot"></span>CAPABILITY VS AUTHORITY</span><span class="badge-soft">AIM™</span></div>
-        <div data-stagger="right" data-stagger-step="130">
-          <div class="authority__row"><span>Access databases</span><span class="status status--ok">Read-only</span></div>
-          <div class="authority__row"><span>Communicate with customers</span><span class="status status--ok">Allowed</span></div>
-          <div class="authority__row"><span>Generate purchase orders</span><span class="status status--ask">Within limits</span></div>
-          <div class="authority__row"><span>Modify business records</span><span class="status status--ask">Human approval</span></div>
-          <div class="authority__row"><span>Interact with other agents</span><span class="status status--ask">Delegation rules</span></div>
-          <div class="authority__row"><span>Act across enterprise systems</span><span class="status status--no">Until authorized</span></div>
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero__media">
+          <img
+            class="kenburns"
+            src="assets/img/ai-hero.jpg"
+            alt=""
+            style="object-position: 70% 30%"
+          />
         </div>
-        <p class="authority__foot"><i data-icon="shield-check" style="color:var(--teal)"></i>Example authority map. Boundaries are set per agent during the AIM™ Design and Authorize stages.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <div class="container page-hero__inner">
+          <nav class="breadcrumb" aria-label="Breadcrumb" data-reveal="up">
+            <a href="index.html">Home</a><i data-icon="chevron-right"></i
+            ><span>Services</span><i data-icon="chevron-right"></i
+            ><span style="color: #fff">AI Agent Development</span>
+          </nav>
+          <div class="page-hero__content">
+            <span class="eyebrow" data-reveal="up">Expotech services</span>
+            <h1 class="words">
+              AI agents that <strong>work for your business</strong>
+            </h1>
+            <p class="lead" data-reveal="up" style="--delay: 0.3s">
+              We design and develop custom AI agents that automate tasks, make
+              intelligent decisions, and interact seamlessly with users and
+              systems.
+            </p>
+            <div class="btn-row" data-reveal="up" style="--delay: 0.45s">
+              <a class="btn btn--primary btn--lg" href="contact.html"
+                >Discuss your agent <i data-icon="arrow-right"></i
+              ></a>
+              <a class="btn btn--light btn--lg" href="aim-governance.html"
+                >How AIM™ governs it</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="hero-wave" aria-hidden="true">
+          <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+            <path
+              fill="currentColor"
+              d="M0 60V30C240 0 480 0 720 22s480 38 720 8v30z"
+            />
+          </svg>
+        </div>
+      </section>
 
-<!-- Process -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow" data-reveal="up">How we deliver</span>
-      <h2 class="h-section words">From first conversation to <strong>a governed agent in production</strong></h2>
-    </div>
-    <div class="steps" data-stagger="up" data-stagger-step="150">
-      <div class="steps__item" style="--d:0s"><span class="steps__dot"></span><span class="steps__num">01</span><h3>Discovery &amp; Analysis</h3><p>We study your systems and processes, find where an agent adds value, and build a roadmap around your business needs.</p></div>
-      <div class="steps__item" style="--d:.25s"><span class="steps__dot"></span><span class="steps__num">02</span><h3>Authority Design</h3><p>Using AIM™, we define what the agent may do: actions, systems, data, financial limits and delegation rights.</p></div>
-      <div class="steps__item" style="--d:.5s"><span class="steps__dot"></span><span class="steps__num">03</span><h3>Development &amp; Testing</h3><p>Developers with niche expertise build, test and deliver the agent and its integrations with your systems.</p></div>
-      <div class="steps__item" style="--d:.75s"><span class="steps__dot"></span><span class="steps__num">04</span><h3>Deploy, Monitor &amp; Support</h3><p>We put the agent into daily operation, monitor it against its boundaries, and support and maintain it.</p></div>
-    </div>
-  </div>
-</section>
+      <!-- Intro -->
+      <section class="section">
+        <div class="container split">
+          <div class="stack" data-reveal="left">
+            <span class="eyebrow">Human-controlled autonomy</span>
+            <h2 class="h-section">
+              AI agent development, <strong>with people in command</strong>
+            </h2>
+            <p class="lead">
+              Our AI agents are built to understand context, learn from data,
+              and operate reliably, helping your business scale faster while
+              reducing manual effort.
+            </p>
+            <p>
+              Expotech develops advanced AI agents and agentic systems designed
+              to automate complex business processes, coordinate workflows,
+              analyze information, and take intelligent action across enterprise
+              environments. Our approach goes beyond traditional AI by focusing
+              on <strong style="color: var(--ink)">controlled autonomy</strong>:
+              giving AI the authority it needs to perform while keeping people
+              firmly in command.
+            </p>
+            <ul class="checklist" data-stagger="up">
+              <li>
+                <i data-icon="check"></i><span>Customer support agents</span>
+              </li>
+              <li>
+                <i data-icon="check"></i
+                ><span>Sales assistants and lead generation</span>
+              </li>
+              <li>
+                <i data-icon="check"></i
+                ><span>Internal workflow automation agents</span>
+              </li>
+              <li>
+                <i data-icon="check"></i
+                ><span>Agentic systems across the enterprise</span>
+              </li>
+            </ul>
+          </div>
+          <div data-reveal="zoom" style="max-width: 520px; margin: 0 auto">
+            <img
+              src="assets/img/ai-agent-circle.png"
+              alt="AI agent robot in front of a data screen"
+              style="animation: bob 8s ease-in-out infinite"
+              width="800"
+              height="711"
+            />
+          </div>
+        </div>
+      </section>
 
-<!-- Industries -->
-<section class="section section--soft">
-  <div class="container">
-    <div class="section-head section-head--split">
-      <div>
-        <span class="eyebrow" data-reveal="up">Industries we serve</span>
-        <h2 class="h-section words">AI agents for <strong>every sector</strong></h2>
-      </div>
-      <p class="lead muted" data-reveal="up">AI agent development is no longer a futuristic concept; it's a present-day necessity for businesses aiming to thrive in a competitive environment.</p>
-    </div>
-    <div class="grid grid--3" data-stagger="zoom" data-stagger-step="90">
-      <div class="tile"><img src="assets/img/ai-service-1.jpg" alt=""><div class="tile__body"><h3>SaaS &amp; Technology</h3><p>Support, onboarding and product assistants inside your platform.</p></div></div>
-      <div class="tile"><img src="assets/img/ai-service-2.jpg" alt=""><div class="tile__body"><h3>E-commerce &amp; Retail</h3><p>Shopping assistants, order status and returns automation.</p></div></div>
-      <div class="tile"><img src="assets/img/ai-service-3.jpg" alt=""><div class="tile__body"><h3>Healthcare</h3><p>Scheduling, intake and patient communication, with clear human oversight.</p></div></div>
-      <div class="tile"><img src="assets/img/ai-service-4.jpg" alt=""><div class="tile__body"><h3>Finance &amp; Banking</h3><p>Agents that work inside defined financial authority limits.</p></div></div>
-      <div class="tile"><img src="assets/img/ai-service-5.jpg" alt=""><div class="tile__body"><h3>Real Estate</h3><p>Lead qualification, follow-ups and listing assistance.</p></div></div>
-      <div class="tile"><img src="assets/img/ai-service-6.jpg" alt=""><div class="tile__body"><h3>Education</h3><p>Learning assistants and administrative automation.</p></div></div>
-    </div>
-    <p class="note" style="margin-top:14px">[Draft copy] The one-line descriptions under each industry are suggestions; the live page lists the industries only.</p>
-  </div>
-</section>
+      <!-- Services -->
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-head section-head--center">
+            <span class="eyebrow" data-reveal="up"
+              >Our AI agent development services</span
+            >
+            <h2 class="h-section words">
+              From idea to deployment,
+              <strong>agents that deliver value</strong>
+            </h2>
+          </div>
+          <div class="grid grid--3" data-stagger="up" data-stagger-step="110">
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="compass"></i></span>
+              <h3>Custom AI Agent Design</h3>
+              <p>
+                We analyze your business needs and design AI agents with the
+                right logic, workflows, and intelligence to solve real problems.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="link"></i></span>
+              <h3>System &amp; API Integration</h3>
+              <p>
+                Seamless integration with CRMs, ERPs, databases, third-party
+                tools, and internal systems to ensure smooth data flow and
+                automation.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="message"></i></span>
+              <h3>Conversational AI Agents</h3>
+              <p>
+                Smart, human-like AI agents for customer support, lead
+                generation, onboarding, and internal assistance, available 24/7.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="workflow"></i></span>
+              <h3>Task Automation &amp; Workflow Agents</h3>
+              <p>
+                AI agents that automate repetitive processes such as data entry,
+                reporting, scheduling, monitoring, and decision support.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="chart"></i></span>
+              <h3>Data-Driven Intelligence</h3>
+              <p>
+                Agents trained to analyze data, generate insights, and support
+                better business decisions in real time.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+            <div class="card card--hover">
+              <span class="icon-box"><i data-icon="shield-check"></i></span>
+              <h3>Secure &amp; Scalable Solutions</h3>
+              <p>
+                We build AI agents with security, compliance, and scalability in
+                mind, ready to grow with your business.
+              </p>
+              <span class="card__corner"></span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<!-- Technology -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow" data-reveal="up">Technology</span>
-      <h2 class="h-section words">Built on the stack <strong>your enterprise already runs</strong></h2>
-    </div>
-    <div class="grid grid--4" data-stagger="up">
-      <div class="card card--soft"><span class="eyebrow eyebrow--plain" style="color:var(--muted)">AI models &amp; frameworks</span><div class="chips"><span class="chip chip--outline">[Add your AI stack]</span></div></div>
-      <div class="card card--soft"><span class="eyebrow eyebrow--plain" style="color:var(--muted)">Applications</span><div class="chips"><span class="chip">Java</span><span class="chip">.NET</span><span class="chip">PHP</span><span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">iOS</span><span class="chip">Android</span></div></div>
-      <div class="card card--soft"><span class="eyebrow eyebrow--plain" style="color:var(--muted)">Data</span><div class="chips"><span class="chip">SQL Server</span><span class="chip">Oracle</span><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">MongoDB</span></div></div>
-      <div class="card card--soft"><span class="eyebrow eyebrow--plain" style="color:var(--muted)">Cloud &amp; DevOps</span><div class="chips"><span class="chip">AWS</span><span class="chip">Azure</span><span class="chip">Docker</span><span class="chip">Jenkins</span></div></div>
-    </div>
-  </div>
-</section>
+      <!-- Capability vs authority -->
+      <section class="section section--darker glow">
+        <div class="container split">
+          <div class="stack" data-reveal="left">
+            <span class="eyebrow">Controlled autonomy</span>
+            <h2 class="h-section">
+              The question changes from <strong>"what can the AI do?"</strong>
+            </h2>
+            <p class="lead" style="color: #fff">
+              to <em>"what should the AI be allowed to do?"</em>
+            </p>
+            <p>
+              Expotech approaches AI agent development with human authority at
+              the center of the architecture. Using AIM™, the Agha
+              Implementation Model, organizations define an agent's permitted
+              purpose, data access, actions, financial authority, operating
+              time, delegation authority, system access, and consequence
+              boundaries before autonomous capabilities are expanded.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn--primary" href="aim-governance.html"
+                >Learn the methodology <i data-icon="arrow-right"></i></a
+              ><a
+                class="btn btn--light"
+                href="https://www.aimcommandcenter.com/"
+                target="_blank"
+                rel="noopener"
+                >AIM Command Center <i data-icon="arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="authority" data-tilt="4" data-reveal="right">
+            <div class="authority__panel" data-tilt-target>
+              <div class="authority__top">
+                <span class="authority__label"
+                  ><span class="live-dot"></span>CAPABILITY VS AUTHORITY</span
+                ><span class="badge-soft">AIM™</span>
+              </div>
+              <div data-stagger="right" data-stagger-step="130">
+                <div class="authority__row">
+                  <span>Access databases</span
+                  ><span class="status status--ok">Read-only</span>
+                </div>
+                <div class="authority__row">
+                  <span>Communicate with customers</span
+                  ><span class="status status--ok">Allowed</span>
+                </div>
+                <div class="authority__row">
+                  <span>Generate purchase orders</span
+                  ><span class="status status--ask">Within limits</span>
+                </div>
+                <div class="authority__row">
+                  <span>Modify business records</span
+                  ><span class="status status--ask">Human approval</span>
+                </div>
+                <div class="authority__row">
+                  <span>Interact with other agents</span
+                  ><span class="status status--ask">Delegation rules</span>
+                </div>
+                <div class="authority__row">
+                  <span>Act across enterprise systems</span
+                  ><span class="status status--no">Until authorized</span>
+                </div>
+              </div>
+              <p class="authority__foot">
+                <i data-icon="shield-check" style="color: var(--teal)"></i
+                >Example authority map. Boundaries are set per agent during the
+                AIM™ Design and Authorize stages.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="cta-band">
-  <div class="container cta-band__inner">
-    <div data-reveal="left" style="flex:1 1 520px">
-      <h2>Turn AI into your <strong>competitive advantage.</strong></h2>
-      <p>Tell us what you want automated. We'll show you what the agent can do, and exactly where its authority stops.</p>
-    </div>
-    <div class="btn-row" data-reveal="right"><a class="btn btn--dark btn--lg" href="contact.html">Build your AI agent <i data-icon="arrow-right"></i></a></div>
-  </div>
-</section>
+      <!-- Process -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow" data-reveal="up">How we deliver</span>
+            <h2 class="h-section words">
+              From first conversation to
+              <strong>a governed agent in production</strong>
+            </h2>
+          </div>
+          <div class="steps" data-stagger="up" data-stagger-step="150">
+            <div class="steps__item" style="--d: 0s">
+              <span class="steps__dot"></span><span class="steps__num">01</span>
+              <h3>Discovery &amp; Analysis</h3>
+              <p>
+                We study your systems and processes, find where an agent adds
+                value, and build a roadmap around your business needs.
+              </p>
+            </div>
+            <div class="steps__item" style="--d: 0.25s">
+              <span class="steps__dot"></span><span class="steps__num">02</span>
+              <h3>Authority Design</h3>
+              <p>
+                Using AIM™, we define what the agent may do: actions, systems,
+                data, financial limits and delegation rights.
+              </p>
+            </div>
+            <div class="steps__item" style="--d: 0.5s">
+              <span class="steps__dot"></span><span class="steps__num">03</span>
+              <h3>Development &amp; Testing</h3>
+              <p>
+                Developers with niche expertise build, test and deliver the
+                agent and its integrations with your systems.
+              </p>
+            </div>
+            <div class="steps__item" style="--d: 0.75s">
+              <span class="steps__dot"></span><span class="steps__num">04</span>
+              <h3>Deploy, Monitor &amp; Support</h3>
+              <p>
+                We put the agent into daily operation, monitor it against its
+                boundaries, and support and maintain it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-</main>
-<div data-include="footer"></div>
-</body>
+      <!-- Industries -->
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-head section-head--split">
+            <div>
+              <span class="eyebrow" data-reveal="up">Industries we serve</span>
+              <h2 class="h-section words">
+                AI agents for <strong>every sector</strong>
+              </h2>
+            </div>
+            <p class="lead muted" data-reveal="up">
+              AI agent development is no longer a futuristic concept; it's a
+              present-day necessity for businesses aiming to thrive in a
+              competitive environment.
+            </p>
+          </div>
+          <div class="grid grid--3" data-stagger="zoom" data-stagger-step="90">
+            <div class="tile">
+              <img src="assets/img/ai-service-1.jpg" alt="" />
+              <div class="tile__body">
+                <h3>SaaS &amp; Technology</h3>
+                <p>
+                  Support, onboarding and product assistants inside your
+                  platform.
+                </p>
+              </div>
+            </div>
+            <div class="tile">
+              <img src="assets/img/ai-service-2.jpg" alt="" />
+              <div class="tile__body">
+                <h3>E-commerce &amp; Retail</h3>
+                <p>Shopping assistants, order status and returns automation.</p>
+              </div>
+            </div>
+            <div class="tile">
+              <img src="assets/img/ai-service-3.jpg" alt="" />
+              <div class="tile__body">
+                <h3>Healthcare</h3>
+                <p>
+                  Scheduling, intake and patient communication, with clear human
+                  oversight.
+                </p>
+              </div>
+            </div>
+            <div class="tile">
+              <img src="assets/img/ai-service-4.jpg" alt="" />
+              <div class="tile__body">
+                <h3>Finance &amp; Banking</h3>
+                <p>
+                  Agents that work inside defined financial authority limits.
+                </p>
+              </div>
+            </div>
+            <div class="tile">
+              <img src="assets/img/ai-service-5.jpg" alt="" />
+              <div class="tile__body">
+                <h3>Real Estate</h3>
+                <p>Lead qualification, follow-ups and listing assistance.</p>
+              </div>
+            </div>
+            <div class="tile">
+              <img src="assets/img/ai-service-6.jpg" alt="" />
+              <div class="tile__body">
+                <h3>Education</h3>
+                <p>Learning assistants and administrative automation.</p>
+              </div>
+            </div>
+          </div>
+          <p class="note" style="margin-top: 14px">
+            [Draft copy] The one-line descriptions under each industry are
+            suggestions; the live page lists the industries only.
+          </p>
+        </div>
+      </section>
+
+      <!-- Technology -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow" data-reveal="up">Technology</span>
+            <h2 class="h-section words">
+              Built on the stack <strong>your enterprise already runs</strong>
+            </h2>
+          </div>
+          <div class="grid grid--4" data-stagger="up">
+            <div class="card card--soft">
+              <span class="eyebrow eyebrow--plain" style="color: var(--muted)"
+                >AI models &amp; frameworks</span
+              >
+              <div class="chips">
+                <span class="chip chip--outline">[Add your AI stack]</span>
+              </div>
+            </div>
+            <div class="card card--soft">
+              <span class="eyebrow eyebrow--plain" style="color: var(--muted)"
+                >Applications</span
+              >
+              <div class="chips">
+                <span class="chip">Java</span><span class="chip">.NET</span
+                ><span class="chip">PHP</span
+                ><span class="chip">JavaScript</span
+                ><span class="chip">Node.js</span><span class="chip">iOS</span
+                ><span class="chip">Android</span>
+              </div>
+            </div>
+            <div class="card card--soft">
+              <span class="eyebrow eyebrow--plain" style="color: var(--muted)"
+                >Data</span
+              >
+              <div class="chips">
+                <span class="chip">SQL Server</span
+                ><span class="chip">Oracle</span
+                ><span class="chip">PostgreSQL</span
+                ><span class="chip">MySQL</span
+                ><span class="chip">MongoDB</span>
+              </div>
+            </div>
+            <div class="card card--soft">
+              <span class="eyebrow eyebrow--plain" style="color: var(--muted)"
+                >Cloud &amp; DevOps</span
+              >
+              <div class="chips">
+                <span class="chip">AWS</span><span class="chip">Azure</span
+                ><span class="chip">Docker</span
+                ><span class="chip">Jenkins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container cta-band__inner">
+          <div data-reveal="left" style="flex: 1 1 520px">
+            <h2>Turn AI into your <strong>competitive advantage.</strong></h2>
+            <p>
+              Tell us what you want automated. We'll show you what the agent can
+              do, and exactly where its authority stops.
+            </p>
+          </div>
+          <div class="btn-row" data-reveal="right">
+            <a class="btn btn--dark btn--lg" href="contact.html"
+              >Build your AI agent <i data-icon="arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-include="footer"></div>
+  </body>
 </html>

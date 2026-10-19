@@ -2636,6 +2636,32 @@ body.drawer-open .drawer-overlay {
 .section--darker .checklist .i {
   color: var(--teal);
 }
+/* Cybersecurity service areas and buyer strip */
+.cyber-area {
+  gap: 14px;
+}
+.cyber-area__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cyber-area__num {
+  font-size: 34px;
+  font-weight: 300;
+  color: var(--line);
+  line-height: 1;
+}
+.cyber-area .checklist li {
+  padding: 9px 0;
+  font-size: 15px;
+}
+.cyber-buyers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px 22px;
+}
 .chips {
   display: flex;
   flex-wrap: wrap;

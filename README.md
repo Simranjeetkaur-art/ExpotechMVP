@@ -3,7 +3,9 @@
 Static HTML/CSS/JS redesign of expotechinc.com, keeping the current typography and palette (Open Sans, #37cadd teal, grey).
 
 - `index.html`: homepage. `home-dark.html` and `home-classic.html` are alternative homepage directions.
-- `innovation.html`: the Innovation Center (books, patents, downloads). `insights.html` redirects there on Vercel (`vercel.json`).
+- `innovation.html`: the Innovation Center (books, searchable patent catalog, research, case studies, articles). `insights.html` redirects there on Vercel (`vercel.json`).
+- `book-*.html`: detail pages for the three books.
+- `cyber-security.html`: Cybersecurity, organized in four service areas.
 - `pages.html`: index of every page, for review.
 - `assets/css/style.css`: shared design system and animations.
 - `assets/js/main.js`: global header and footer, scroll reveals, counters, tabs, the AIM™ lifecycle stepper and the zoomable image viewer.

@@ -146,7 +146,13 @@
   var page = document.body.getAttribute("data-page") || "";
   var NAV = [
     { key: "ai", label: "AI Agents", href: "ai-agent-development.html" },
-    { key: "aim", label: "AIM™ Governance", href: "aim-governance.html" },
+    {
+      key: "aim",
+      label: "AIM™ Governance",
+      short: "AIM™",
+      href: "aim-governance.html",
+    },
+    { key: "cyber", label: "Cybersecurity", href: "cyber-security.html" },
     {
       key: "services",
       label: "Services",
@@ -169,12 +175,6 @@
           sub: "Turnkey delivery and rescue",
           href: "manufacturing.html",
           icon: "factory",
-        },
-        {
-          label: "Cyber Security",
-          sub: "Assessments, pen testing, response",
-          href: "cyber-security.html",
-          icon: "shield",
         },
         {
           label: "Data Warehouse",
@@ -248,7 +248,7 @@
         },
       ],
     },
-    { key: "insights", label: "Insights", href: "insights.html" },
+    { key: "innovation", label: "Innovation", href: "innovation.html" },
   ];
   function extAttrs(it) {
     return it.ext
@@ -259,14 +259,23 @@
   function headerHTML() {
     var items = NAV.map(function (n) {
       var cur = n.key === page ? ' aria-current="page"' : "";
+      // Long labels get a short form that CSS swaps in on narrower desktops
+      var label = n.short
+        ? '<span class="nav__full">' +
+          n.label +
+          '</span><span class="nav__short" aria-hidden="true">' +
+          n.short +
+          "</span>"
+        : n.label;
       if (!n.items)
         return (
           '<li class="nav__item"><a class="nav__link" href="' +
           n.href +
           '"' +
+          (n.short ? ' aria-label="' + n.label + '"' : "") +
           cur +
           ">" +
-          n.label +
+          label +
           "</a></li>"
         );
       var links = n.items
@@ -425,15 +434,16 @@
       '<span style="display:inline-flex;gap:8px;align-items:center">' +
       icon("clock") +
       "Monday – Friday, 9:00 am – 5:30 pm</span></div></div>" +
-      col("AI", [
+      col("AI & Security", [
         ["AI Agent Development", "ai-agent-development.html"],
         ["AIM™ AI Governance", "aim-governance.html"],
+        ["Cybersecurity", "cyber-security.html"],
         ["AIM Command Center", "https://www.aimcommandcenter.com/", 1],
       ]) +
       col("Services", [
         ["RevIT ERP", "revit-erp.html"],
         ["SAP & JDA", "manufacturing.html"],
-        ["Cyber Security", "cyber-security.html"],
+        ["Data Warehouse", "data-warehouse.html"],
         ["Data Analytics", "data-analytics.html"],
         ["Learning Management Systems", "learning-management-system.html"],
       ]) +
@@ -441,7 +451,7 @@
         ["About", "about.html"],
         ["Clients", "clients.html"],
         ["Awards", "awards.html"],
-        ["Insights", "insights.html"],
+        ["Innovation", "innovation.html"],
         ["Contact", "contact.html"],
       ]) +
       '<div class="footer__col footer__news"><span class="footer__title">Newsletter</span><p>Insights on AI governance, ERP and enterprise systems.</p>' +

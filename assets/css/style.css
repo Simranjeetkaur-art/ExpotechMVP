@@ -2467,6 +2467,16 @@ body.drawer-open .drawer-overlay {
 .section--darker .book__subtitle {
   color: #e6e6e6;
 }
+.book-card {
+  align-items: flex-start;
+}
+.book-card__cover {
+  margin: 0 auto 12px;
+  max-width: 200px;
+}
+.book-card__cover img {
+  animation: none;
+}
 .trio {
   display: grid;
   gap: 14px;

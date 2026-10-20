@@ -1,6 +1,14 @@
 {
   "redirects": [
-    { "source": "/insights.html", "destination": "/innovation.html", "permanent": true },
-    { "source": "/electronic-signature.html", "destination": "/financial-services.html", "permanent": true }
+    {
+      "source": "/insights.html",
+      "destination": "/innovation.html",
+      "permanent": true
+    },
+    {
+      "source": "/electronic-signature.html",
+      "destination": "/financial-services.html",
+      "permanent": true
+    }
   ]
 }

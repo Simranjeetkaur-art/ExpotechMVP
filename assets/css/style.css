@@ -998,29 +998,16 @@ main [id] {
 }
 @media (max-width: 1359.98px) {
   .nav__link {
-    padding: 0 7px;
-    letter-spacing: 0.04em;
+    padding: 0 8px;
   }
   .brand__text {
     font-size: 17px;
   }
 }
-.nav__short {
-  display: none;
-}
-/* Seven menu items: the header gets a little more room than page content on wide
-   screens, and "AIM™ Governance" shortens to "AIM™" where it still would not fit */
+/* The header gets a little more room than page content on wide screens */
 @media (min-width: 1360px) {
   .site-header .container {
     max-width: 1360px;
-  }
-}
-@media (min-width: 1180px) and (max-width: 1359.98px) {
-  .nav__full {
-    display: none;
-  }
-  .nav__short {
-    display: inline;
   }
 }
 @media (max-width: 900px) {
@@ -1252,6 +1239,58 @@ body.drawer-open .drawer-overlay {
 }
 .page-hero .eyebrow {
   color: var(--teal);
+}
+/* Light split hero (AIM page): pale teal background, the visual framed on the right */
+.page-hero--light {
+  background: linear-gradient(135deg, var(--white) 0%, var(--teal-soft) 100%);
+  color: var(--body);
+}
+.page-hero--light::before {
+  background: radial-gradient(
+    640px 340px at 90% 10%,
+    rgba(55, 202, 221, 0.2),
+    transparent 70%
+  );
+}
+.page-hero--light h1 {
+  color: var(--ink);
+}
+.page-hero--light h1 strong {
+  color: var(--teal-deep);
+}
+.page-hero--light .lead {
+  color: var(--body);
+}
+.page-hero--light .eyebrow {
+  color: var(--teal-deep);
+}
+.page-hero--light .breadcrumb,
+.page-hero--light .breadcrumb a {
+  color: var(--muted);
+}
+.page-hero--light .breadcrumb a:hover {
+  color: var(--teal-deep);
+}
+.page-hero__split {
+  display: grid;
+  gap: clamp(28px, 4vw, 56px);
+  align-items: center;
+}
+@media (min-width: 980px) {
+  .page-hero__split {
+    grid-template-columns: 1.25fr 1fr;
+  }
+}
+.page-hero__visual {
+  margin: 0;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+.page-hero__visual img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 .page-hero--short .page-hero__inner {
   padding-bottom: clamp(56px, 7vw, 88px);

@@ -145,12 +145,31 @@
   /* ---------------- Global header & footer ---------------- */
   var page = document.body.getAttribute("data-page") || "";
   var NAV = [
-    { key: "ai", label: "AI Agents", href: "ai-agent-development.html" },
     {
-      key: "aim",
-      label: "AIM™ Governance",
-      short: "AIM™",
-      href: "aim-governance.html",
+      key: "ai",
+      label: "AI Agents",
+      wide: true,
+      items: [
+        {
+          label: "AI Agent Development",
+          sub: "Custom agents for support, sales and operations",
+          href: "ai-agent-development.html",
+          icon: "bot",
+        },
+        {
+          label: "AIM Command Center",
+          sub: "Tools, training, assessments and certification",
+          href: "https://www.aimcommandcenter.com/",
+          icon: "gauge",
+          ext: true,
+        },
+        {
+          label: "AIM™ Governance",
+          sub: "Human authority and control over autonomous AI",
+          href: "aim-governance.html",
+          icon: "layers",
+        },
+      ],
     },
     { key: "cyber", label: "Cybersecurity", href: "cyber-security.html" },
     {
@@ -288,30 +307,21 @@
   ];
   function extAttrs(it) {
     return it.ext
-      ? ' target="_blank" rel="noopener" title="Opens the current expotechinc.com page"'
+      ? ' target="_blank" rel="noopener"'
       : "";
   }
 
   function headerHTML() {
     var items = NAV.map(function (n) {
       var cur = n.key === page ? ' aria-current="page"' : "";
-      // Long labels get a short form that CSS swaps in on narrower desktops
-      var label = n.short
-        ? '<span class="nav__full">' +
-          n.label +
-          '</span><span class="nav__short" aria-hidden="true">' +
-          n.short +
-          "</span>"
-        : n.label;
       if (!n.items)
         return (
           '<li class="nav__item"><a class="nav__link" href="' +
           n.href +
           '"' +
-          (n.short ? ' aria-label="' + n.label + '"' : "") +
           cur +
           ">" +
-          label +
+          n.label +
           "</a></li>"
         );
       var links = n.items
@@ -865,10 +875,16 @@
         if (on) shown++;
       });
       btns.forEach(function (b) {
-        b.setAttribute("aria-pressed", String(b.getAttribute("data-area") === area));
+        b.setAttribute(
+          "aria-pressed",
+          String(b.getAttribute("data-area") === area),
+        );
       });
       count.textContent =
-        "Showing " + shown + " of " + items.length +
+        "Showing " +
+        shown +
+        " of " +
+        items.length +
         (items.length === 1 ? " patent" : " patents");
       empty.hidden = shown > 0;
     }
